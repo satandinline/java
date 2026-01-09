@@ -1,0 +1,151 @@
+# ==================== 操作系统自动生成文件 ====================
+
+# Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.lnk
+
+# macOS:
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux:
+*~
+
+# ==================== 编辑器/IDE文件 ====================
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# PyCharm
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Sublime Text
+*.sublime-*
+
+# ==================== Python特定文件 ====================
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+dist
+build
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ==================== 敏感信息和配置文件 ====================
+
+# 环境变量文件（最重要的安全防护）
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+*.env
+
+# 配置文件
+db.ini
+config.ini
+settings.ini
+deploy_key_rsa
+deploy_key_rsa.pub
+
+# 密钥文件
+*.key
+*.pem
+*.crt
+*.cer
+
+# 日志文件
+*.log
+logs/
+
+# ==================== 依赖和包管理 ====================
+
+# pip
+pip-selfcheck.json
+
+# Poetry
+poetry.lock
+
+# PDM
+.pdm.toml
+
+# ==================== 数据库和缓存 ====================
+
+# SQLite
+*.sqlite3
+*.db
+
+# 缓存目录
+.cache
+__pycache__/
+
+# ==================== 部署和构建文件 ====================
+
+# 压缩包
+*.tar.gz
+*.zip
+*.rar
+
+# 部署文件
+Dockerfile.local
+docker-compose.override.yml
+
+# ==================== 其他 ====================
+
+# 临时文件
+tmp/
+temp/
+
+# 系统文件
+*.tmp
+*.temp

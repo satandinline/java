@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toolchains>
+    <!-- 配置Java 21 toolchain -->
+    <!-- 请根据实际Java 21安装路径修改下面的路径 -->
+    <toolchain>
+        <type>jdk</type>
+        <provides>
+            <version>21</version>
+        </provides>
+        <configuration>
+            <!-- 请修改为您的Java 21实际安装路径 -->
+            <!-- 例如: C:\Program Files\Java\jdk-21 -->
+            <!-- 例如: C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot -->
+            <!-- 例如: D:\java\jdk-21 -->
+            <jdkHome>请修改为Java 21的实际安装路径</jdkHome>
+        </configuration>
+    </toolchain>
+</toolchains>

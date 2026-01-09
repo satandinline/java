@@ -1,0 +1,75 @@
+# 中华文化相关同义词表
+春节, 新年, 农历新年, 春节假期
+中秋节, 月饼节, 仲秋节, 八月十五
+端午节, 龙舟节, 端午, 端阳
+清明节, 扫墓节, 踏青节
+元宵节, 灯节, 上元节
+七夕节, 乞巧节, 中国情人节
+重阳节, 登高节, 敬老节
+腊八节, 腊八粥节
+冬至, 冬节, 亚岁
+夏至, 夏节
+立春, 春节, 春天开始
+立夏, 夏天开始
+立秋, 秋天开始
+立冬, 冬天开始
+
+传统节日, 民俗节日, 民间节日
+传统文化, 中华文化, 中国文化
+民间艺术, 民俗艺术, 传统艺术
+民俗活动, 民间活动, 传统活动
+文化遗产, 文化遗产, 传统遗产
+非物质文化遗产, 非遗, 无形文化遗产
+手工艺品, 手工制品, 传统工艺
+传统服饰, 民族服装, 汉服
+民族音乐, 传统音乐, 古典音乐
+传统舞蹈, 民族舞蹈, 民间舞蹈
+民间故事, 传说, 神话故事
+传统建筑, 古建筑, 古典建筑
+饮食文化, 美食文化, 传统美食
+传统戏曲, 中国戏曲, 地方戏
+书法艺术, 中国书法, 传统书法
+国画, 中国画, 传统绘画
+中医, 中医药, 传统医学
+武术, 功夫, 中国传统武术
+太极拳, 太极拳术, 传统武术
+剪纸, 剪纸, 传统剪纸艺术
+刺绣, 绣花, 传统刺绣
+陶瓷, 瓷器, 中国传统陶瓷
+茶文化, 茶艺, 中国茶文化
+京剧, 京戏, 中国传统戏曲
+昆曲, 昆剧, 传统戏曲
+皮影戏, 皮影, 传统戏剧
+木偶戏, 傀儡戏, 传统戏剧
+相声, 传统相声, 中国相声
+杂技, 中国传统杂技, 杂耍
+
+# 英文同义词表
+traditional_festival, chinese_festival, folk_festival
+traditional_culture, chinese_culture, culture
+folk_art, traditional_art, ethnic_art
+cultural_heritage, cultural_property, heritage
+intangible_cultural_heritage, ich,非遗
+handicrafts, handmade_products, traditional_crafts
+traditional_clothing, ethnic_clothing, hanfu
+traditional_music, classical_chinese_music, guoyue
+traditional_dance, folk_dance, ethnic_dance
+folk_stories, legends, myths
+traditional_architecture, ancient_architecture, classical_architecture
+food_culture, cuisine_culture, traditional_cuisine
+traditional_opera, chinese_opera, local_opera
+calligraphy, chinese_calligraphy, traditional_calligraphy
+traditional_chinese_paintings, guohua, chinese_paintings
+traditional_chinese_medicine, tcm, chinese_medicine
+martial_arts, kung_fu, wushu
+taichi, tai_chi, traditional_wushu
+paper_cutting, jianzhi, traditional_art
+embroidery, xiu_hua, traditional_craft
+ceramics, porcelain, traditional_ceramics
+tea_culture, tea_art, chinese_tea_culture
+beijing_opera, jingju, traditional_chinese_opera
+kunqu_opera, kunqu, traditional_opera
+shadow_play, piyingxi, traditional_theater
+puppet_show, kuileixi, traditional_theater
+cross_talk, xiangsheng, chinese_comedy
+acrobatics, traditional_acrobatics, acrobatic_performances

@@ -1,0 +1,93 @@
+Java版本项目依赖包列表
+========================
+
+本文件列出了Java版本项目所需的所有依赖包，包括后端Java依赖、前端Node.js依赖和AIGC功能所需的Python依赖。
+
+一、Java后端依赖（Maven）
+------------------------
+
+1. Spring Boot框架
+   - spring-boot-starter-parent: 3.4.1
+   - spring-boot-starter-web: Web框架支持
+   - spring-boot-starter-data-jpa: JPA数据访问支持
+   - spring-boot-starter-validation: 数据验证支持
+   - spring-boot-starter-test: 测试支持
+
+2. 数据库驱动
+   - mysql-connector-j: MySQL数据库连接驱动（运行时依赖）
+
+3. JSON处理
+   - jackson-databind: JSON序列化和反序列化
+
+4. 工具库
+   - commons-lang3: Apache Commons工具库
+   - poi-ooxml: 5.2.5 - Apache POI用于Excel文件导出
+
+5. 环境变量支持
+   - dotenv-java: 3.0.0 - .env文件支持
+
+6. Maven插件
+   - maven-compiler-plugin: 3.11.0 - Java编译插件
+   - spring-boot-maven-plugin: Spring Boot打包插件
+
+Java版本要求：JDK 21或更高版本
+Maven版本要求：3.6或更高版本
+
+二、前端依赖（NPM）
+------------------
+
+1. 核心框架
+   - vue: ^3.5.22 - Vue.js框架
+   - vue-router: ^4.6.3 - Vue路由
+
+2. 开发工具
+   - vite: ^7.1.11 - 构建工具
+   - @vitejs/plugin-vue: ^6.0.1 - Vite Vue插件
+   - vite-plugin-vue-devtools: ^8.0.3 - Vue开发工具插件
+   - concurrently: ^8.2.2 - 并发运行工具
+
+Node.js版本要求：^20.19.0 或 >=22.12.0
+
+三、AIGC功能Python依赖（可选）
+----------------------------
+
+如果使用AIGC功能，需要安装以下Python依赖（参考backend-python/requirements.txt）：
+
+主要依赖包括：
+- Flask: Web框架
+- PyMySQL: MySQL数据库连接
+- langchain: RAG和AIGC核心
+- chromadb: 向量数据库
+- 以及其他AIGC相关依赖
+
+详细依赖列表请参考：backend-python/requirements.txt
+
+Python版本要求：3.7或更高版本
+
+四、系统依赖
+----------
+
+1. 数据库
+   - MySQL 5.7或更高版本（推荐MySQL 8.0+）
+
+2. 操作系统
+   - Windows 10/11
+   - Linux（Ubuntu 20.04+, CentOS 7+等）
+   - macOS 10.15+
+
+五、依赖安装说明
+--------------
+
+1. Java后端依赖安装
+   在backend-java目录下执行：
+   mvn clean install
+
+2. 前端依赖安装
+   在backend-java/FrontEnd目录下执行：
+   npm install
+
+3. Python依赖安装（如使用AIGC功能）
+   在backend-python目录下执行：
+   pip install -r requirements.txt
+
+注意：所有依赖包都会在首次构建时自动下载，确保网络连接正常。

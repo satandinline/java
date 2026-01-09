@@ -1,0 +1,168 @@
+# Java后端 - 用户使用手册
+
+**版本：** 1.0  
+**更新日期：** 2026年1月9日
+
+## 快速开始
+
+### 1. 环境要求
+
+- JDK 24 或更高版本
+- Maven 3.6 或更高版本
+- MySQL 数据库
+- Node.js（用于前端）
+
+### 2. 配置数据库
+
+在 `src/main/resources/application.yml` 中配置数据库连接：
+
+```yaml
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/java_project?useUnicode=true&characterEncoding=utf8mb4&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: your_password
+```
+
+### 3. 编译项目
+
+```bash
+cd backend-java
+mvn clean compile
+```
+
+### 4. 启动服务
+
+**方式一：使用启动脚本（推荐）**
+```bash
+# Windows批处理
+启动项目.bat
+
+# Mac/Linux Shell
+./start.sh
+```
+
+**方式二：使用Maven**
+```bash
+mvn spring-boot:run
+```
+
+**方式三：使用StartupManager（自动启动前端和后端）**
+```bash
+mvn compile exec:java -Dexec.mainClass=com.app.StartupManager
+```
+
+服务启动后：
+- Java后端：`http://localhost:7210`
+- 前端：`http://localhost:5193`
+- AIGC服务：`http://localhost:7200`
+
+## 主要功能
+
+### 用户认证
+- 用户注册
+- 用户登录
+- 密码管理
+- 个人信息管理
+
+### 资源管理
+- 资源上传
+- 资源查询
+- 资源详情查看
+
+### 检索功能
+- 全文检索（每页8条数据）
+- AI语义搜索（每页8条数据）
+
+### 评论系统
+- 查看评论
+- 发表评论
+- 回复评论
+- 点赞功能
+
+### 标注任务
+- 查看标注任务列表（每页12条数据）
+- 支持状态过滤
+- 权限控制
+
+### AIGC功能
+- AIGC聊天（文本和图像生成）
+- 新建对话（一键创建新会话）
+- 历史对话查看（支持分页）
+- 会话管理（删除、批量删除、更新摘要）
+- AI回答自适应显示（最多占3/4屏幕）
+
+### 统计功能
+- 访问人次统计
+- AIGC使用量统计
+- 趋势数据
+
+### 通知系统
+- 查看通知列表
+- 标记通知为已读
+- 评论点赞和回复时自动接收通知
+
+### 管理员功能
+- 管理员面板统计
+- 用户管理
+- 角色切换（仅超级管理员）
+
+### 导出与下载
+- 用户资源导出为Excel
+- 批量导出用户资源
+- 导出文件下载
+
+## 常见问题
+
+### 1. 编译失败
+
+**问题：** Maven编译时出错
+
+**解决：**
+- 检查JDK版本是否为24或更高
+- 检查Maven版本是否为3.6或更高
+- 清理并重新编译：`mvn clean compile`
+
+### 2. 数据库连接失败
+
+**问题：** 启动时提示数据库连接失败
+
+**解决：**
+- 检查MySQL服务是否已启动
+- 检查 `application.yml` 中的数据库配置是否正确
+- 确认数据库 `java_project` 已创建
+
+### 3. 端口被占用
+
+**问题：** 提示端口7210或5193已被占用
+
+**解决：**
+- 关闭占用端口的其他程序
+- 或修改 `application.yml` 中的端口配置（后端）
+- 或修改 `FrontEnd/vite.config.js` 中的端口配置（前端）
+
+## AIGC功能使用
+
+### AIGC功能说明
+- **实时聊天**：需要Python服务运行在 `http://localhost:7200`
+- **历史对话**：从本地数据库读取，无需Python服务即可查看
+- **新建对话**：点击"+"按钮即可快速创建新会话
+- **AI回答显示**：自适应屏幕大小，最多占3/4屏幕
+
+### AIGC功能使用步骤
+1. 确保已安装Python 3.7或更高版本
+2. 安装Python依赖（参考 `backend-python/requirements.txt`）
+3. 配置API密钥（在项目根目录的 `.env` 文件中）
+4. 启动Python AIGC服务（运行 `backend-python/AIGC/aigc_api_server.py`）
+5. 启动Java后端和前端
+6. 在AIGC页面即可使用聊天功能
+
+### AIGC功能特性
+- **新建对话**：点击历史会话面板的"+"按钮即可创建新对话
+- **查看历史**：点击历史会话列表中的会话即可查看历史对话
+- **删除会话**：选中会话后点击"删除选中"按钮，或点击"全部删除"删除所有会话
+- **AI回答显示**：AI回答会自动适应屏幕大小，最多占3/4屏幕，确保良好的阅读体验
+
+## 技术支持
+
+如遇到问题，请参考主项目的用户使用手册或联系技术支持。

@@ -1,0 +1,14 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.project.sourcePaths": [
+        "src/main/java"
+    ],
+    "java.project.outputPath": "target/classes",
+    "java.project.referencedLibraries": [
+        "target/**/*.jar"
+    ],
+    "files.encoding": "utf8",
+    "[java]": {
+        "files.encoding": "utf8"
+    }
+}
